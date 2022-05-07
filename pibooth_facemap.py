@@ -20,7 +20,7 @@ def pibooth_setup_picture_factory(cfg, opt_index, factory):
 
 def apply_filter(pil_image: PIL.Image) -> PIL.Image:
     with io.BytesIO() as jpg_image:
-        pil_image.save(jpg_image)
         jpg_image.name = "capture.jpg"
+        pil_image.save(jpg_image)
         jpg_image.seek(0)
         return PIL.Image.open(age_image(jpg_image))

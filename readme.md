@@ -14,5 +14,4 @@ Update `TOKEN` in `facemap.py`.
 
 - Token is only valid for some hours and needs to be acquired by yourself.
 - Images are not resized before sending them of to the api - you probably want to do this if you are using huge dslr images that could piss of facemap.
-- This plugin assumes you use `PilPictureFactory`. It will crash when using `OpenCvPictureFactory`.
 - The plugin uses the private property `PictureFactory._images` which could brake easily.
