@@ -11,11 +11,11 @@ def pibooth_startup(app):
 
 @pibooth.hookimpl
 def state_preview_enter(app):
-    GPIO.output(RELAIS_1_GPIO, GPIO.HIGH)
+    GPIO.output(RELAIS_1_GPIO, GPIO.LOW)
 
 @pibooth.hookimpl
 def state_capture_exit(app):
-    GPIO.output(RELAIS_1_GPIO, GPIO.LOW)
+    GPIO.output(RELAIS_1_GPIO, GPIO.HIGH)
 
 
 
